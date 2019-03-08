@@ -1,0 +1,184 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>my resume</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/jquery.fullPage.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'css/animate.min.css'%}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/resume.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+</head>
+<body>
+{% include "header.html" %}
+<div class="container">
+    <div id="fullpage">
+        <div class="section " id="section0">
+            <div class="center">
+                <div id="personal_introduce">
+                    <h3>个人简介</h3>
+                    <div><strong>姓名:</strong>王宝 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>性别:</strong>男</div>
+                    <div><strong>手机号:</strong>17612800912 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>邮箱:</strong>wajpzywj@qq.com</div>
+                    <div><strong>工作经验:</strong>2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>学历:</strong>本科 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>学校:</strong>保山学院(云南)</div>
+                </div>
+            </div>
+            <div class="center">
+                <div id="personal_skill">
+                        <h3>个人技能</h3>
+                        <div>精通：django框架</div>
+                        <div>熟悉：Python语言、熟练使用常用库和模块、Scrapy爬虫框架、</div>
+                        <div>熟悉：Linux(ubuntu)操作系统，能熟练使用常用shell命令，熟悉linux的编译环境</div>
+                        <div>熟悉：MySQL、SQLite3数据库 </div>
+                        <div>熟悉：java语言</div>
+                        <div>熟悉：数据库Mysql的使用</div>
+                        <div>了解：数据库Oracle、redis、sqlite3的使用；</div>
+                        <div>svn,git的使用；</div>
+                        <br>
+                        <div><strong>blog:106.13.95.202 or wajpzywj.top；</strong></div>
+                        <div><strong>GitHub:https://github.com/wajpzywj/；</strong></div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="section" id="section1">
+            <div class="center">
+                <div id="work_one_introduce">
+                    <h3>项目经历</h3>
+                    <p>一、&nbsp;&nbsp;&nbsp;&nbsp;2019.1 - 2019.2   <strong>博客网站（个人）</strong></p>
+                    <h4>网站地址:</h4>
+                    <div style="color: red">106.13.95.202</div>
+                    <h4>开发环境 :</h4>
+                    <div>ubuntu + django + sqlite3 + redis</div>
+                    <br>
+                    <p><strong>项目描述:</strong>该项目(包含简历)是我自己开发，并部署到apache服务器上，可以登录网站查看。
+	这是一个可以发布文章，查看博客，收集图片，播放视频为一体的网站，用户可以在后台进行管理控制。</p>
+                    <h4>使用技术 :</h4>
+                    <div>Markdown编辑器， jQuery库， ajax,  Restful  API, 第三方登录， apache部署 等。</div>
+                </div>
+                <br>
+                <div id="work_one_struct">
+                    <p>二、&nbsp;&nbsp;&nbsp;&nbsp;2017.3 - 2018.2   <strong>新闻快报（个人）</strong></p>
+                    <h4>开发环境 :</h4>
+                    <div>ubuntu + django + sqlite3 + redis</div>
+                    <br>
+                    <p><strong>项目描述:</strong>这是一个集新闻内容发布，视频播放为一体的网站，用户可以在后台对前台的新闻进行编辑，发布。
+使用技术：Ueditor富文本编辑器集成， jQuery库， ajax,  Restful  API, 第三方登录， Redis提速等。</p>
+                </div>
+                <div id="work_one_duty">
+                    <h4>使用技术 :</h4>
+                    <div>Ueditor富文本编辑器集成， jQuery库， ajax,  Restful  API, 第三方登录， Redis提速等。</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="section2">
+            <div class="center">
+                <div id="work_two_introduce">
+                    <h3>项目经历</h3>
+                    <p>三、&nbsp;&nbsp;&nbsp;&nbsp;2018.10 - 2018.12   <strong>数据爬取</strong></p>
+                    <p><strong>项目描述:</strong>开心网、酷狗音乐、豆瓣电影、糗事百科、简书、链家、斗破苍穹小说、拉钩招聘、QQ空间好友说说等数据的简单爬取</p>
+                </div>
+                <br>
+                <div id="work_two_struct">
+                    <h4>使用技术:</h4>
+                    <div>urllib库、bs4+requests、xpath、selenium工具、scrapy爬虫框架等</div>
+                </div>
+                <div id="work_two_duty" hidden>
+                    <h4>项目负责:</h4>
+                    <div>1、原来的C++函数翻译成java的接口方法。</div>
+                    <div>2、部分页面的代码实现，将js方法用java代码实现。</div>
+                    <div>3、部分接口编写测试类。</div>
+                </div>
+            </div>
+            <div class="div_session">
+                <img id="work_two_img_one" src="/static/images/girl.jpg" hidden/>
+                <img id="work_two_img_two"/>
+            </div>
+        </div>
+
+        <div class="section" id="section3">
+            <div class="center">
+                <div id="work_three_introduce" hidden>
+                    <h3>获得荣誉</h3>
+                    <p>2015.11 - 2016.06   <strong>数据爬取</strong></p>
+                    <p><strong>项目描述:</strong>开心网、酷狗音乐、豆瓣电影、糗事百科、简书、链家、斗破苍穹小说、拉钩招聘、QQ空间好友说说等数据的简单爬取</p>
+                </div>
+                <div id="work_three_struct">
+                    <h3><strong>获得荣誉:</strong></h3>
+                    <div>全国计算机二级C</div>
+                    <div>全国计算机三级网络</div>
+                    <div>全国计算机技术与软件专业技术资格考试证书 (初级)</div>
+                    <div>教师资格证（中教）</div>
+                    <div>国家励志奖学金</div>
+                </div>
+                <div id="work_three_duty">
+                    <h3><strong>自我评价:</strong></h3>
+                    <div>为人简单，诚恳和善，和同事关系处理较好，爱好学习，喜欢新技术，希望能够在工作中找到自我价值，享受工作，享受生活。</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% include "footer.html" %}
+</body>
+<script type="text/javascript" src='{% static "js/jquery.js" %}'></script>
+
+	<script type="text/javascript" src="{% static 'vendors/scrolloverflow.js' %}"></script>
+
+	<script type="text/javascript" src="{% static 'js/jquery.fullPage.js' %}"></script>
+
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['personalIntroduce', 'projectExperience1', 'projectExperience2', 'projectExperience3'],
+				scrollBar: true,
+
+                scrollingSpeed: 500,
+                navigation: true,
+				navigationPosition: 'right',
+				navigationTooltips: ['fullPage.js', 'Powerful', 'Amazing', 'Simple'],
+
+                onLeave: function(index, nextIndex, direction){
+				    var $personal = $('#personal_introduce, #personal_skill');
+				    var $one_duty = $('#work_one_introduce, #work_one_duty');
+				    var $one_struct = $('#work_one_struct');
+				    var $two_view = $('#work_two_introduce, #work_two_struct, #work_two_duty');
+				    var $three_view = $('#work_three_introduce, #work_three_struct, #work_three_duty');
+				    var element = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend'
+
+                    if (nextIndex == 1){
+                        $personal.addClass('animated zoomIn').one(element, function () {
+                            $personal.removeClass('animated zoomIn');
+                        });
+                    }else if(nextIndex == 2){
+                        $one_duty.addClass('animated slideInLeft').one(element, function () {
+                            $one_duty.removeClass('animated slideInLeft');
+                        });
+                        $one_struct.addClass('animated slideInRight').one(element, function () {
+                            $one_struct.removeClass('animated slideInRight');
+                        });
+                    }else if(nextIndex == 3){
+                        $two_view.addClass('animated pulse').one(element, function () {
+                            $two_view.removeClass('animated pulse');
+                        });
+                    }else if(nextIndex == 4){
+                        $three_view.addClass('animated lightSpeedIn').one(element, function () {
+                            $three_view.removeClass('animated lightSpeedIn');
+                        });
+                    }
+                },
+                afterLoad: function(anchorLink, index){
+                    var element = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend'
+                    var $personal = $('#personal_introduce, #personal_skill');
+                    if (index == 1){
+                        $personal.addClass('animated zoomIn').one(element, function () {
+                            $personal.removeClass('animated zoomIn');
+                        });
+                    }
+                }
+			});
+		});
+	</script>
+</html>
